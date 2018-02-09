@@ -1,0 +1,6 @@
+framework module Pods_ChinesePoetry {
+  umbrella header "Pods-ChinesePoetry-umbrella.h"
+
+  export *
+  module * { export * }
+}
