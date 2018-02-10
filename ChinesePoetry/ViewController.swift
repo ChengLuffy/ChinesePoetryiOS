@@ -104,6 +104,7 @@ class ViewController: UIViewController {
         
         SVProgressHUD.show()
         dataSource.removeAll()
+        tableView.reloadData()
         let queue = DispatchQueue(label: "search")
         queue.async {
             PoetryManager.shareManager.dbQueue?.inTransaction({ (db, rollBack) in

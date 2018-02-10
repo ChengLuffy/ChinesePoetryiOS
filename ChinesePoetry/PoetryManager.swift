@@ -16,7 +16,7 @@ class PoetryManager: NSObject {
     var dbQueue: FMDatabaseQueue?
     
     override init() {
-        let dbPath = Bundle.main.path(forResource: "tangshi", ofType: ".db")
+        let dbPath = Bundle.main.path(forResource: "poetry", ofType: ".db")
         dbQueue = FMDatabaseQueue(path: dbPath)
         super.init()
     }

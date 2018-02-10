@@ -12,9 +12,9 @@
 		1D4589F7202C28D100EAC9D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4589F5202C28D100EAC9D0 /* Main.storyboard */; };
 		1D4589F9202C28D100EAC9D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4589F8202C28D100EAC9D0 /* Assets.xcassets */; };
 		1D4589FC202C28D100EAC9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4589FA202C28D100EAC9D0 /* LaunchScreen.storyboard */; };
-		1D458A06202C290900EAC9D0 /* tangshi.db in Resources */ = {isa = PBXBuildFile; fileRef = 1D458A05202C290900EAC9D0 /* tangshi.db */; };
 		1D458A0A202C31F700EAC9D0 /* PoetryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D458A09202C31F700EAC9D0 /* PoetryModel.swift */; };
 		1D458A0E202D64E300EAC9D0 /* PoetryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D458A0D202D64E300EAC9D0 /* PoetryManager.swift */; };
+		1D458A12202E86E600EAC9D0 /* poetry.db in Resources */ = {isa = PBXBuildFile; fileRef = 1D458A11202E86E600EAC9D0 /* poetry.db */; };
 		A7D937CC6829C99068A3E344 /* Pods_ChinesePoetry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52C84A7B3643E9DF977B90E /* Pods_ChinesePoetry.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,9 +27,9 @@
 		1D4589F8202C28D100EAC9D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D4589FB202C28D100EAC9D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D4589FD202C28D100EAC9D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D458A05202C290900EAC9D0 /* tangshi.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = tangshi.db; sourceTree = "<group>"; };
 		1D458A09202C31F700EAC9D0 /* PoetryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetryModel.swift; sourceTree = "<group>"; };
 		1D458A0D202D64E300EAC9D0 /* PoetryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetryManager.swift; sourceTree = "<group>"; };
+		1D458A11202E86E600EAC9D0 /* poetry.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = poetry.db; sourceTree = "<group>"; };
 		8937DAA4F1E5F455A8288ABF /* Pods-ChinesePoetry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChinesePoetry.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChinesePoetry/Pods-ChinesePoetry.release.xcconfig"; sourceTree = "<group>"; };
 		F52C84A7B3643E9DF977B90E /* Pods_ChinesePoetry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChinesePoetry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,7 +83,7 @@
 		1D458A04202C290900EAC9D0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				1D458A05202C290900EAC9D0 /* tangshi.db */,
+				1D458A11202E86E600EAC9D0 /* poetry.db */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D458A06202C290900EAC9D0 /* tangshi.db in Resources */,
+				1D458A12202E86E600EAC9D0 /* poetry.db in Resources */,
 				1D4589FC202C28D100EAC9D0 /* LaunchScreen.storyboard in Resources */,
 				1D4589F9202C28D100EAC9D0 /* Assets.xcassets in Resources */,
 				1D4589F7202C28D100EAC9D0 /* Main.storyboard in Resources */,
@@ -381,11 +381,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5WAW7Z979;
 				INFOPLIST_FILE = ChinesePoetry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.chengluffy.ChinesePoetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -397,11 +398,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5WAW7Z979;
 				INFOPLIST_FILE = ChinesePoetry/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.chengluffy.ChinesePoetry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
